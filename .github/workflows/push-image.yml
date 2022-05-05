@@ -37,7 +37,6 @@ jobs:
           
       - name: Modifiy the specific files using scripts
         run: |
-          --- shell scripts or command lines to execute ---
           echo "CMD [ "npm", "run", "docker:start:indexer" ]" >> Dockerfile
           
       - name: Log in to the Container registry
