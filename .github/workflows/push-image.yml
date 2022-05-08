@@ -37,6 +37,7 @@ jobs:
           
       - name: Modifiy the specific files using scripts
         run: |
+          echo 'EXPOSE 8080' >> Dockerfile
           echo 'CMD [ "npm", "run", "docker:start:indexer" ]' >> Dockerfile
           
       - name: Log in to the Container registry
